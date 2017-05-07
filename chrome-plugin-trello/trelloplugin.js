@@ -370,7 +370,7 @@ AST = (function ( A ) {
 			s = s.toLowerCase();
 			var label = s.replace(/^\[|\]$/g, '');
 			console.log("label = "+label);
-			var labels = {content:24, design:316, integration:49, analysis:240, development:115};
+			var labels = {content:24, design:316, integration:49, analysis:240, development:115, management:160};
 			if(labels[label]){
 				console.log("label exist ");
 				return 'hsla('+labels[label]+',50%,40%,1)';
