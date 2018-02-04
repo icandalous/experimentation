@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css">
+	
+	<style>
+/* nav bar search box - drop down menu button */
+.navbar .navbar-search .dropdown-menu { min-width: 25px; }
+.dropdown-menu .label-icon { margin-left: 5px; }
+.btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s;
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #4CAF50; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+</style>
+
+<script
+  src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" ></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$(function(){
+    
+    $(".input-group-btn .dropdown-menu li a").click(function(){
+
+        var selText = $(this).html();
+    
+        //working version - for single button //
+       //$('.btn:first-child').html(selText+'<span class="caret"></span>');  
+       
+       //working version - for multiple buttons //
+       $(this).parents('.input-group-btn').find('.btn-search').html(selText);
+
+   });
+
+});
+
+</script>
+
+
+
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title> Page moutshabihates</title>
+</head>
+<body>
+	<header class="cd-header">
+
+    <nav class="navbar">
+        <div class="nav nav-justified navbar-nav">
+ 
+            <form class="navbar-form navbar-search" role="search">
+                <div class="input-group">
+        
+                    <input type="text" class="form-control" id="search-text">
+                
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-search btn-info" id="btn-search-ayats">
+                            <span class="glyphicon glyphicon-search"></span>
+                            <span class="label-icon">Search</span>
+                        </button>
+                    </div>
+                </div>  
+            </form>   
+         
+        </div>
+    </nav>
+
+	
+	
+		
+	</header>
+
+	<main class="cd-main-content">
+		<div class="cd-tab-filter-wrapper">
+			<div class="cd-tab-filter" id="filter-sourate-nav">
+			</div> <!-- cd-tab-filter -->
+		</div> <!-- cd-tab-filter-wrapper -->
+
+		<section class="cd-gallery">
+			
+			<div class="list-group">
+			<ul id="list-mutashabihates">
+			<li class="mix baqara check1 radio2 juz-1">
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Sourate baqara</h5>
+      <small>verset 18</small>
+    </div>
+    <p class="mb-1">ُمٌّ بُكْمٌ عُمْيٌ فَهُمْ لَا يَرْجِعُونَ</p>
+    <small>Donec id elit non mi porta.</small>
+  </a>
+  </li>
+  <li class="mix baqara check2 radio2 juz-1">
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Sourate Baqara</h5>
+      <small class="text-muted">Verset 13</small>
+    </div>
+    <p class="mb-1">َإِذَا قِيلَ لَهُمْ آمِنُوا كَمَا آمَنَ النَّاسُ قَالُوا أَنُؤْمِنُ كَمَا آمَنَ السُّفَهَاءُ ۗ أَلَا إِنَّهُمْ هُمُ السُّفَهَاءُ وَلَٰكِن لَّا يَعْلَمُونَ</p>
+    <small class="text-muted">Donec id elit non mi porta.</small>
+  </a>
+  </li>
+  <li class="mix baqara check3 radio3 juz-1">
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Sourate Baqara</h5>
+      <small class="text-muted">Verset: 33</small>
+    </div>
+    <p class="mb-1">۞ إِنَّ اللَّهَ لَا يَسْتَحْيِي أَن يَضْرِبَ مَثَلًا مَّا بَعُوضَةً فَمَا فَوْقَهَا ۚ فَأَمَّا الَّذِينَ آمَنُوا فَيَعْلَمُونَ أَنَّهُ الْحَقُّ مِن رَّبِّهِمْ ۖ وَأَمَّا الَّذِينَ كَفَرُوا فَيَقُولُونَ مَاذَا أَرَادَ اللَّهُ بِهَٰذَا مَثَلًا ۘ يُضِلُّ بِهِ كَثِيرًا وَيَهْدِي بِهِ كَثِيرًا ۚ وَمَا يُضِلُّ بِهِ إِلَّا الْفَاسِقِينَ</p>
+    <small class="text-muted">Donec id elit non mi porta.</small>
+  </a>
+  </li>
+  <li class="mix nissaa check3 radio2 juz-3">
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">Sourate Nissa'a</h5>
+      <small>Verset :11</small>
+    </div>
+    <p class="mb-1">يُوصِيكُمُ اللَّهُ فِي أَوْلَادِكُمْ ۖ لِلذَّكَرِ مِثْلُ حَظِّ الْأُنثَيَيْنِ ۚ فَإِن كُنَّ نِسَاءً فَوْقَ اثْنَتَيْنِ فَلَهُنَّ ثُلُثَا مَا تَرَكَ ۖ وَإِن كَانَتْ وَاحِدَةً فَلَهَا النِّصْفُ ۚ وَلِأَبَوَيْهِ لِكُلِّ وَاحِدٍ مِّنْهُمَا السُّدُسُ مِمَّا تَرَكَ إِن كَانَ لَهُ وَلَدٌ ۚ فَإِن لَّمْ يَكُن لَّهُ وَلَدٌ وَوَرِثَهُ أَبَوَاهُ فَلِأُمِّهِ الثُّلُثُ ۚ فَإِن كَانَ لَهُ إِخْوَةٌ فَلِأُمِّهِ السُّدُسُ ۚ مِن بَعْدِ وَصِيَّةٍ يُوصِي بِهَا أَوْ دَيْنٍ ۗ آبَاؤُكُمْ وَأَبْنَاؤُكُمْ لَا تَدْرُونَ أَيُّهُمْ أَقْرَبُ لَكُمْ نَفْعًا ۚ فَرِيضَةً مِّنَ اللَّهِ ۗ إِنَّ اللَّهَ كَانَ عَلِيمًا حَكِيمًا</p>
+    <small>Donec id elit non mi porta.</small>
+  </a>
+  </li>
+  </ul>
+</div>
+
+			<div class="cd-fail-message">No results found</div>
+		</section> <!-- cd-gallery -->
+
+		<div class="cd-filter">
+			<form>
+				<div class="cd-filter-block">
+					<h4>Search</h4>
+					
+					<div class="cd-filter-content">
+						<input type="search" placeholder="sourate, juz...">
+					</div> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+				
+				<div class="cd-filter-block">
+					<h4>Page filter</h4>
+					
+					<div class="cd-filter-content">
+						<div class="slidecontainer" id="page-filter-zone">
+						</div>
+						<p id="show-page"></p>
+					</div> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+				<div class="cd-filter-block">
+					<h4>Select</h4>
+					
+					<div class="cd-filter-content">
+						<div class="cd-select cd-filters" id="juz-filter">
+							<select class="filter" name="selectThis" id="selectThis">
+								<option value="">Choose a Juz</option>
+								<option value=".juz-1">Juz 1</option>
+								<option value=".juz-2">Juz 2</option>
+								<option value=".juz-3">Juz 3</option>
+								<option value=".juz-4">Juz 4</option>
+							</select>
+						</div> <!-- cd-select -->
+					</div> <!-- cd-filter-content -->
+				</div> <!-- cd-filter-block -->
+
+			</form>
+
+			<a href="#0" class="cd-close">Close</a>
+		</div> <!-- cd-filter -->
+
+		<a href="#0" class="cd-filter-trigger">Filters</a>
+	</main> <!-- cd-main-content -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script>
+var sourates = new Set();
+var juz = new Set();
+var hizb = new Set();
+var pages = new Set();
+$('#btn-search-ayats').on("click", function(){
+	
+	var search = $('#search-text').val();
+	$.ajax({
+		url:"http://localhost/quran-api/public/api/quran/v1/mutashab/search/" + search,
+		success:function(result){
+			console.log(result);
+			//alert(JSON.stringify(result));
+			clear()
+			if(result){
+				affichage(result);
+				addSelectionJuz();
+				addSlide();
+				initialisationFiltre();
+			}
+			else{
+			}
+		
+		}
+	})
+});
+
+function clear(){
+	$("#list-mutashabihates").html('');
+	$('#filter-sourate-nav').html('');
+	$('#page-filter-zone').html('');
+	$('#juz-filter').html('');
+}
+function affichage(data){
+	var html= '';
+	$("#list-mutashabihates").html(html);
+	for(var i = 0; i<data.length; i++){
+		var mutashab = data[i].data;
+		for(var j = 0; j<mutashab.length; j++){
+			html += addItem(mutashab[j]);
+			
+		}
+		$("#list-mutashabihates").append(html);
+	}
+	$("#list-mutashabihates").html(html);
+	console.log(sourates);
+	console.log(juz);
+	console.log(hizb);
+	console.log(pages);
+	afficherBarSourateFilter();
+}
+function addItem(item){
+	var surateName = item['sura name'].split('--')[0];
+	sourates.add(surateName);
+	juz.add('juz-'+item['juzid']);
+	hizb.add('hizb-'+item['hizbid']);
+	pages.add(item['pageid']);
+	var html = '<li class="mix '+surateName.toLowerCase()+' juz-'+item['juzid']+' hizb-'+item['hizbid']+' page-'+item['pageid']+'" style="display: inline-block;">'+
+  '<a href="#" class="list-group-item list-group-item-action flex-column align-items-start">'+
+    '<div class="d-flex w-100 justify-content-between">'+
+      '<h5 class="mb-1">Sourate : '+surateName+'</h5>'+
+      '<small>verset : '+item['ayat_num']+'</small>'+
+    '</div>'+
+    '<p class="mb-1">ُ'+item['ayat']+'</p>'+
+    '<small>Donec id elit non mi porta.</small>'+
+  '</a>'+
+  '</li>';
+  
+  return html;
+}
+
+function afficherBarSourateFilter(){
+	let html = "";
+	$('#filter-sourate-nav').html('');
+	html += '<ul class="cd-filters">';
+	html += '<li class="placeholder">';
+	html += '<a data-type="all" href="#0">All</a>';
+	html += '</li>';
+	html += '<li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>';
+	for (let s of sourates){
+		name = s.toLowerCase();
+		html += '<li class="filter" data-filter=".'+name+'"><a href="#0" data-type="'+name+'">'+s+'</a></li>';
+	}
+	
+	html += '</ul>';
+	
+	$('#filter-sourate-nav').append(html);
+	
+}
+
+function addSlide(){
+	$('#page-filter-zone').html('');
+	 var arr = Array.from(pages).sort();
+	 console.log(arr);
+	 max = arr[0];
+	 min = arr[arr.length-1];
+	 console.log(min, max);
+	var html = '<span id="max-range-page">'+min+'</span><input type="range" min="'+min+'" max="'+max+'" value="'+max+'" class="slider" id="myRange"><span id="max-range-page">'+max+'</span>';
+	$('#page-filter-zone').html(html);
+}
+function addSelectionJuz(){
+	$('#juz-filter').html('');
+	var html = '<select class="filter" name="selectThis" id="selectThis">';
+	html+='<option value="">Choose a Juz</option>';
+	for (let j of juz){
+		html+='<option value=".'+j+'">'+j+'</option>';
+	}
+	html+='</select>';
+	$('#juz-filter').html(html);
+	
+}
+</script>
+</body>
+</html>
